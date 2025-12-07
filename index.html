@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+
+  
+  <h1 id="Rehan" style="text-align : center; margin-top: 50px; ">Rehan Pebriansah</h1>
+  <button onclick="Rehan ()">Di Klik Jadi Ganti Color</button>
+
+
+  <input type="color" id="Ganteng">
+
+  <script>
+    const btn = document.getElementById("Rehan").innerHTML = "WELCOMEE TOO!!!";
+    const picker = document.getElementById("Ganteng");
+
+    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "black", "brown"];
+    let index = 0;
+
+
+
+    function Rehan() {
+      document.getElementById("Rehan").innerText = "REHAN PEBRIANSAH ";
+      document.body.style.background = colors[index];
+      index = (index + 1) % colors.length;
+    }
+    Ganteng.oninput = function () {
+      document.body.style.background = picker.value;
+    }
+  </script>
+</body>
+</html>
